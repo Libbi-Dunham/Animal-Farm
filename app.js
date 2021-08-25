@@ -1,9 +1,21 @@
-// import functions
+const catImage = document.getElementById('cat');
+const catAudio = document.getElementById('cat-audio');
 
-// reference needed DOM elements
+catImage.addEventListener('click', () => {
+  catAudio.play();
+});
 
+const dogImage = document.getElementById('Dog');
+const dogAudio = document.getElementById('dog-audio');
 
-// set event listeners 
-  // get user input(s)
-  // do any needed work with the value(s)
-  // update DOM to reflect new value(s)
+dogImage.addEventListener('click', () => {
+  dogAudio.play();
+});
+
+const horseImage = document.getElementById('horse');
+const horseAudio = document.getElementById('horse-audio');
+
+horseImage.addEventListener('click', () => {
+  horseAudio.play();
+});
+

@@ -6,10 +6,6 @@ body {
     grid-template-rows: auto 1fr auto;
 }
 
-main {
-    padding: 30px;
-}
-
 header {
     background-color: #A2D7D2;
     height: 110px;
@@ -20,7 +16,7 @@ header {
 }
 
 header img {
-    height: 100%;
+    height: 20%;
     object-fit: contain;
 }
 
@@ -28,7 +24,24 @@ h1 {
     font-size: 1.5rem;
     font-weight: bold;
 }
+main {
+    padding: 30px;
+}
 
+.animals {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
+    grid-auto-rows: 200px;
+
+    grid-gap: 10px;
+}
+.animals img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+
+}
 footer {
     background-color: #FAF0EA;
     padding: 10px;
